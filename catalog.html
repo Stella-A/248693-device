@@ -8,7 +8,11 @@
     <header class="main-header">
       <p class="logo" title="Онлайн-магазин Девайс"><a href="index.html">Device</a></p>
       <div class="header-navigation">
-        <!-- Здесь будет форма поиска -->
+        <form class="search" method="get" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input type="search" name="search" placeholder="Поиск по сайту" id="search">
+          <button class="button">Найти</button>
+        </form>
         <ul class="user-menu">
           <li><a href="#">Валентин Петухов</a></li>
           <li class="close-menu"><a href="#">Выйти</a></li>
@@ -48,7 +52,47 @@
       </ul>
       <section class="filters">
         <h2>Фильтр:</h2>
-        <!-- Здесь будет фильтр -->
+        <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+          <section class="filters-divide filters-price">
+            <h3>Стоимость</h3>
+            <label><input type="range" name="price" min="0" max="10000" value="5000"></label>
+          </section>
+          <section class="filters-divide filters-color">
+            <h3>Цвет</h3>
+            <p>
+              <input type="checkbox" id="black" name="black" checked>
+              <label for="black">Черный</label>
+            </p>
+            <p>
+              <input type="checkbox" id="white" name="white">
+              <label for="white">Белый</label>
+            </p>
+            <p>
+              <input type="checkbox" id="blue" name="blue" checked>
+              <label for="blue">Синий</label>
+            </p>
+            <p>
+              <input type="checkbox" id="red" name="red" checked>
+              <label for="red">Красный</label>
+            </p>
+            <p>
+              <input type="checkbox" id="pink" name="pink">
+              <label for="pink">Розовый</label>
+            </p>
+          </section>
+          <section class="filters-divide filters-bluetoth">
+            <h3>Bluetooth</h3>
+            <p>
+              <input type="radio" id="yes" name="bluetoth" checked>
+              <label for="yes">Есть</label>
+            </p>
+            <p>
+              <input type="radio" id="no" name="bluetoth">
+              <label for="no">Нет</label>
+            </p>
+          </section>
+          <button type="button">Показать</button>
+        </form>
       </section>
       
       <section class="catalog">
@@ -158,13 +202,25 @@
     
     <section class="modal modal-contact">
       <h2 class="visually-hidden">Связаться с нами</h2>
-      <!-- Здесь будет форма -->
-      <span class="modal-close" title="Закрыть">x</span>
+      <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Для отправки ответа">
+        </p>
+        <p>
+          <label for="description">Текст письма:</label>
+          <textarea name="description" id="description" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="reset" title="Закрыть">x</button>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map-big.png" alt="Как до нас добраться" width="994" height="593">
-      <span class="modal-close" title="Закрыть">x</span>
+      <button class="modal-close" type="reset" title="Закрыть">x</button>
     </section>
   </body>
 </html>
