@@ -636,3 +636,339 @@ a {
 .modal-form textarea:invalid {
   background-color: #f6dada;
 }
+
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+  min-width: 1122px;
+  height: 2015px;
+}
+
+body {
+  /* Временно для сетки */
+  /*background-image: url('../preview/device-index.jpg');
+  background-size: 1440px 2795px;*/
+  /*background-image: url('../preview/device-catalog.jpg');
+  background-size: 1440px 2015px;
+  background-repeat: no-repeat;
+  background-position: top center;*/
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-header {
+  /* Временно для сетки */
+  min-height: 227px;
+}
+
+.header-navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 60px;
+  
+  /* Временно для сетки */
+  min-height: 130px;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  
+  /* Временно для сетки */
+}
+
+.logo {
+  width: 165px;
+  margin-top: 22px;
+  
+  /* Временно для сетки */
+  min-height: 35px;
+}
+
+.search {
+  width: 440px;
+  
+  /* Временно для сетки */
+  min-height: 50px;
+}
+
+.user-menu {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+}
+
+.site-navigation {
+  width: 1040px;
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+  min-height: 25px;
+}
+
+.main-navigation {
+  padding: 20px 60px;
+  
+  /* Временно для сетки */
+  min-height: 95px;
+}
+
+.main {
+  padding-bottom: 68px;
+  
+  /* Временно для сетки */
+  min-height: 1420px;
+}
+
+.slider {
+  /* Временно для сетки */
+  min-height: 500px;
+}
+
+.popular {
+  /* Временно для сетки */
+  margin-top: 90px;
+  height: 240px;
+}
+
+.popular-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.popular-item {
+  width: 160px;
+  flex-basis: 160px;
+  align-items: stretch;
+  
+  /* Временно для сетки */
+  min-height: 240px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+  padding-bottom: 50px;
+  
+  /* Временно для сетки */
+  min-height: 402px;
+}
+
+.services-controls {
+  width: 285px;
+}
+
+.services-list {
+  width: 800px;
+}
+
+.brands {
+  margin-top: 105px;
+  
+  /* Временно для сетки */
+  min-height: 85px;
+}
+
+.brands-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+  min-height: 85px;
+}
+
+.brands-item {
+  /* Временно для сетки */
+  min-height: 85px;
+  flex-basis: 260px;
+  width: 260px;
+}
+
+.communication {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  
+  /* Временно для сетки */
+  min-height: 588px;
+}
+
+.about {
+  width: 460px;
+  
+  /* Временно для сетки */
+}
+
+.contact {
+  width: 560px;
+  
+  /* Временно для сетки */
+}
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 42px;
+  margin-left: 60px;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+  
+  /* Временно для сетки */
+  width: 500px;
+  min-height: 40px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  margin-left: 60px;
+  margin-top: 28px;
+  
+  /* Временно для сетки */
+  width: 400px;
+  min-height: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  
+  /* Временно для сетки */
+  min-height: 1212px;
+  margin-top: 42px;
+}
+
+.filters {
+  width: 328px;
+}
+
+.catalog {
+  width: 760px;
+}
+
+.sorted {
+  /* Временно для сетки */
+  min-height: 72px;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+  margin-top: 68px;
+}
+
+.catalog-item {
+  width: 360px;
+  
+  /* Временно для сетки */
+  min-height: 500px;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+  min-height: 72px;
+}
+
+.main-footer {
+  /* Временно для сетки */
+  min-height: 320px;
+/*  background-color: transparent;*/
+}
+
+.main-footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  /* Временно для сетки */
+  min-height: 320px;
+}
+
+.footer-autorized {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  
+  /* Временно для сетки */
+  min-height: 40px;
+}
+
+.autorized-menu {
+  width: 360px;
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+  min-height: 25px;
+}
+
+.footer-conditions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  
+  /* Временно для сетки */
+  min-height: 27px;
+}
+
+.footer-conditions p {
+  width: 200px;
+  
+  /* Временно для сетки */
+  min-height: 27px;
+}
+
+.conditions-list {
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+  min-height: 27px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 63px;
+  
+  /* Временно для сетки */
+  min-height: 40px;
+}
+
+.social-list {
+  width: 175px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  
+  /* Временно для сетки */
+  min-height: 40px;
+}
+
+.logo-academy {
+  width: 28px;
+  margin-left: auto;
+}
