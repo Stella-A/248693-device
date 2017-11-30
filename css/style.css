@@ -1228,6 +1228,10 @@ input[type="radio"].visually-hidden {
 .filter-input-radio + label::before {
   width: 25px;
   height: 25px;
+}
+
+.filter-input-radio:not(:checked) + label::before,
+.filter-input-radio:not(:checked):disabled + label::before {
   background-image: url(../img/radio-off.svg);
 }
 
