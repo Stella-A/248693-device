@@ -17,12 +17,20 @@ var checkContent = function (obj, event) {
     addMessageError(obj);
   } else {
     removeMessageError(obj);
+    localStorage.setItem("name", contactName.value);
+    localStorage.setItem("email", contactEmail.value);
   }
 };
 
 var checkActiveElement = function (obj) {
   if (obj === document.activeElement) {
     return true;
+  }
+};
+
+var checkStorageValue = function (storage, obj) {
+  if (storage) {
+    obj.value = storage;
   }
 };
 
@@ -46,6 +54,8 @@ var openPopup = function (obj, event) {
   event.preventDefault();
   obj.classList.add("modal-show");
   contactName.focus();
+  checkStorageValue(storageName, contactName);
+  checkStorageValue(storageEmail, contactEmail);
 }
 
 var closePopup = function (obj, event) {
@@ -71,6 +81,8 @@ var contactForm = contactPopup.querySelector(".modal-form");
 var contactName = contactPopup.querySelector("[name=name]");
 var contactEmail = contactPopup.querySelector("[name=email]");
 var contactDescription = contactPopup.querySelector("[name=description]");
+var storageName = localStorage.getItem("name");
+var storageEmail = localStorage.getItem("email");
 
 contactOpen.addEventListener("click", function(event) {
   openPopup(contactPopup, event);
